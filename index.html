@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNews</title>
+    <link rel="shortcut icon" href="news_logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex">
+        <div class="logo">
+            <a href="" onclick="reload()"><img src="news_logo.png" alt="logo"></a>
+        </div>
+        <div class="options">
+            <ul>
+                <li id="sports" onclick="navitem_search('sports')">Sports</li>
+                <li id="politics" onclick="navitem_search('politics')">Politics</li>
+                <li id="disaster" onclick="navitem_search('disaster')">Disaster</li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search-parts">
+            <input id="find" type="text" name="search" placeholder="Search for News">
+            <button id="searchpart" type="button" >Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="card-container" id="card_container">
+            
+        </div>
+    </main>
+    <template id="news-card">
+        <div class="card">
+            <div class="card-image">
+                <img id="news-image" src="https:/via.placeholder.com/450x250" alt="image">
+            </div>
+            <div class="card-heading" id="card-heading">
+                <h3 id="news-heading">This is heading</h3>
+                <h6 id="channel-name">channel_name 16/06/2023</h6>
+                <p id="news-desc" class="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure fugit quia reprehenderit consectetur pariatur, veniam expedita quas doloribus sequi.
+                </p>
+            </div>
+        </div>
+    </template>
+
+</body>
+<script src="script.js"></script>
+</html>
